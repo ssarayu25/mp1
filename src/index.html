@@ -2,12 +2,373 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Crochet Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <header class="site-header" id="top">
+            <nav class="site-nav" aria-label="Main site navigation">
+                <a class="brand" href="#home">Crochet Studio</a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#on-my-hook" class="nav-link">Recent Projects</a></li>
+                    <li><a href="#my-projects" class="nav-link">Yarn I’ve been loving</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#crochet-action" class="nav-link">Crochet in Action</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section hero" id="home" aria-labelledby="hero-title">
+                <div class="container hero-content">
+                    <p class="hero-kicker">Sarayu Crochet</p>
+                    <h1 id="hero-title">What I've been making.</h1>
+                    <p class="hero-subtitle">From amigurumi to wearables.</p>
+                    <p class="hero-message">
+                        Made with love, one stitch at a time.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section projects" id="on-my-hook" aria-labelledby="on-hook-title">
+                <div class="container">
+                    <h2 id="on-hook-title">Recent Projects</h2>
+                    <div class="carousel" aria-label="Crochet work-in-progress carousel">
+                        <button class="carousel-control prev" type="button" aria-label="View previous project">
+                            <span aria-hidden="true">&#10094;</span>
+                        </button>
+
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+                                <article class="carousel-slide">
+                                    <img class="slide-photo" src="assets/100_0042.jpg" alt="Crochet project photo showing yarn texture and stitches" />
+                                    <div class="slide-heading-row">
+                                        <h3>Babydoll Top</h3>
+                                        <button class="btn open-modal" type="button" data-modal-target="modal-photo-1" aria-haspopup="dialog">Details</button>
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide">
+                                    <img class="slide-photo" src="assets/100_1903.JPG" alt="Crochet project photo with bright handcrafted detail" />
+                                    <div class="slide-heading-row">
+                                        <h3>Two Toned Scarf</h3>
+                                        <button class="btn open-modal" type="button" data-modal-target="modal-photo-2" aria-haspopup="dialog">Details</button>
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide">
+                                    <img class="slide-photo" src="assets/101_0050.JPG" alt="Crochet project photo featuring a handmade item in progress" />
+                                    <div class="slide-heading-row">
+                                        <h3>Lace Sweater</h3>
+                                        <button class="btn open-modal" type="button" data-modal-target="modal-photo-3" aria-haspopup="dialog">Details</button>
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide">
+                                    <img class="slide-photo" src="assets/103_1047.JPG" alt="Crochet project photo with soft yarn colors" />
+                                    <div class="slide-heading-row">
+                                        <h3>Hibisus Tote Bag</h3>
+                                        <button class="btn open-modal" type="button" data-modal-target="modal-photo-4" aria-haspopup="dialog">Details</button>
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide">
+                                    <img class="slide-photo" src="assets/103_1131.JPG" alt="Crochet project photo highlighting yarn and stitch detail" />
+                                    <div class="slide-heading-row">
+                                        <h3>Leaf Top</h3>
+                                        <button class="btn open-modal" type="button" data-modal-target="modal-photo-5" aria-haspopup="dialog">Details</button>
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide">
+                                    <img class="slide-photo" src="assets/IMG_5300.JPG" alt="Crochet project photo with a finished handmade piece" />
+                                    <div class="slide-heading-row">
+                                        <h3>Sailor Slippers</h3>
+                                        <button class="btn open-modal" type="button" data-modal-target="modal-photo-7" aria-haspopup="dialog">Details</button>
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide">
+                                    <img class="slide-photo" src="assets/IMG_5418.JPG" alt="Crochet project photo showing colorful handmade yarn work" />
+                                    <div class="slide-heading-row">
+                                        <h3>Rose Filet Crochet</h3>
+                                        <button class="btn open-modal" type="button" data-modal-target="modal-photo-8" aria-haspopup="dialog">Details</button>
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide">
+                                    <img class="slide-photo" src="assets/IMG_5429.JPG" alt="Crochet project photo with a finished textile in warm tones" />
+                                    <div class="slide-heading-row">
+                                        <h3>Button Pillow</h3>
+                                        <button class="btn open-modal" type="button" data-modal-target="modal-photo-9" aria-haspopup="dialog">Details</button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control next" type="button" aria-label="View next project">
+                            <span aria-hidden="true">&#10095;</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section experience" id="my-projects" aria-labelledby="projects-gallery-title">
+                <div class="container">
+                    <h2 id="projects-gallery-title">Yarn I’ve been loving</h2>
+                    <div class="experience-grid">
+                        <article class="experience-card yarn-card">
+                            <img
+                                class="yarn-image"
+                                src="assets/16213737002-BernatHarmony.webp"
+                                alt="Bernat Harmony yarn swatch in a soft pastel shade"
+                            />
+                            <h3>Bernat Harmony Yarn</h3>
+                            <p class="role">Plush texture for blankets and cozy accessories</p>
+                            <p>
+                                Smooth, soft, and easy to work with when you want a gentle drape
+                                and a polished finish.
+                            </p>
+                            <a
+                                class="btn"
+                                href="https://www.yarnspirations.com/collections/yarn/products/bernat-harmony-yarn-250g-8-8oz?variant=50591294980411"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Shop now
+                            </a>
+                        </article>
+
+                        <article class="experience-card yarn-card">
+                            <img
+                                class="yarn-image"
+                                src="assets/H970039701.webp"
+                                alt="Caron Simply Soft yarn in a cream-toned skein"
+                            />
+                            <h3>Caron Simply Soft Yarn</h3>
+                            <p class="role">Everyday favorite for wearables and amigurumi</p>
+                            <p>
+                                A versatile staple with a smooth finish that works well for soft
+                                garments, toys, and lightweight gift projects.
+                            </p>
+                            <a
+                                class="btn"
+                                href="https://www.yarnspirations.com/collections/yarn/products/caron-simply-soft-yarn?variant=47071305367867"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Shop now
+                            </a>
+                        </article>
+
+                        <article class="experience-card yarn-card">
+                            <img
+                                class="yarn-image"
+                                src="assets/16111010955.webp"
+                                alt="Bernat Blanket Yarn skein in a soft cream tone"
+                            />
+                            <h3>Bernat Blanket Yarn</h3>
+                            <p class="role">Bulky texture for quick blankets and plush layers</p>
+                            <p>
+                                A fast-working favorite when you want a cuddly, oversized finish
+                                that feels extra cozy.
+                            </p>
+                            <a
+                                class="btn"
+                                href="https://www.yarnspirations.com/collections/yarn/products/bernat-blanket-yarn-300g-10-5oz-1?variant=47071382405435"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Shop now
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section video" id="crochet-action" aria-labelledby="video-title">
+                <div class="video-media" aria-hidden="true">
+                    <video class="action-video" autoplay muted playsinline loop preload="auto" poster="assets/video-poster.jpg">
+                        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                    </video>
+                    <img class="video-fallback" src="assets/video-poster.jpg" alt="" />
+                    <div class="video-overlay"></div>
+                </div>
+                <div class="container video-content">
+                    <h2 id="about-title">About Me</h2>
+                    <p class="video-note" id="about">
+                        I am a crochet enthusiast who loves turning yarn into pieces that
+                        are both practical and playful. I enjoy experimenting with new
+                        stitches, color palettes, and pattern adaptations.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section contact" id="contact" aria-labelledby="contact-title">
+                <div class="container">
+                    <h2 id="contact-title">Contact</h2>
+                    <p>Feel free to connect and follow my crochet updates using the links below.</p>
+                    <div class="social-links" role="list" aria-label="Social media links">
+                        <a
+                            class="social-link"
+                            href="https://github.com/ssarayu25"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit Sarayu Suresh on GitHub"
+                        >
+                            <span class="icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" focusable="false">
+                                    <path d="M12 0.5C5.65 0.5 0.5 5.65 0.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56v-2.02c-3.2.69-3.87-1.35-3.87-1.35-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.52-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.17-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.95 10.95 0 0 1 5.74 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.07 0 4.41-2.69 5.39-5.25 5.67.41.35.77 1.03.77 2.09v3.1c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z" />
+                                </svg>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
+                        <a
+                            class="social-link"
+                            href="https://www.instagram.com/sarayu_crochet/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit Sarayu Crochet on Instagram"
+                        >
+                            <span class="icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" focusable="false">
+                                    <path d="M7 2.5h10A4.5 4.5 0 0 1 21.5 7v10A4.5 4.5 0 0 1 17 21.5H7A4.5 4.5 0 0 1 2.5 17V7A4.5 4.5 0 0 1 7 2.5zm0 1.5A3 3 0 0 0 4 7v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 2.5A4.5 4.5 0 1 1 7.5 11 4.51 4.51 0 0 1 12 6.5zm0 1.5A3 3 0 1 0 15 11a3 3 0 0 0-3-3zm5.2-.9a1.05 1.05 0 1 1-1.05-1.05 1.05 1.05 0 0 1 1.05 1.05z" />
+                                </svg>
+                            </span>
+                            <span>Instagram @sarayu_crochet</span>
+                        </a>
+                        <a
+                            class="social-link"
+                            href="mailto:ssarayu25@gmail.com"
+                            aria-label="Send email to ssarayu25@gmail.com"
+                        >
+                            <span class="icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" focusable="false">
+                                    <path d="M2 5h20a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm10 7L3.74 6.5h16.52L12 12zm-8.5 5h17V8.24l-8.12 5.4a1 1 0 0 1-1.1 0L3.5 8.24V17z" />
+                                </svg>
+                            </span>
+                            <span>ssarayu25@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Sarayu Suresh</p>
+        </footer>
+
+        <div class="modal" id="modal-photo-1" role="dialog" aria-modal="true" aria-labelledby="modal-photo-1-title" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close project details">&times;</button>
+                <h3 id="modal-photo-1-title">Babydoll Top</h3>
+                <table class="detail-table">
+                    <tr><th>Yarn weight</th><td>Sport weight</td></tr>
+                    <tr><th>Yarn type</th><td>Cotton acrylic blend</td></tr>
+                    <tr><th>Time</th><td>~15 hours</td></tr>
+                    <tr><th>Difficulty level</th><td>Intermediate</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-photo-2" role="dialog" aria-modal="true" aria-labelledby="modal-photo-2-title" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close project details">&times;</button>
+                <h3 id="modal-photo-2-title">Two Toned Scarf</h3>
+                <table class="detail-table">
+                    <tr><th>Yarn weight</th><td>Light weight</td></tr>
+                    <tr><th>Yarn type</th><td>Vegan cashmere</td></tr>
+                    <tr><th>Time</th><td>~5 hours</td></tr>
+                    <tr><th>Difficulty level</th><td>Beginner</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-photo-3" role="dialog" aria-modal="true" aria-labelledby="modal-photo-3-title" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close project details">&times;</button>
+                <h3 id="modal-photo-3-title">Lace Sweater</h3>
+                <table class="detail-table">
+                    <tr><th>Yarn weight</th><td>Sport weight</td></tr>
+                    <tr><th>Yarn type</th><td>Cotton</td></tr>
+                    <tr><th>Time</th><td>~20 hours</td></tr>
+                    <tr><th>Difficulty level</th><td>Intermediate</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-photo-4" role="dialog" aria-modal="true" aria-labelledby="modal-photo-4-title" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close project details">&times;</button>
+                <h3 id="modal-photo-4-title">Hibisus Tote Bag</h3>
+                <table class="detail-table">
+                    <tr><th>Yarn weight</th><td>Worsted weight</td></tr>
+                    <tr><th>Yarn type</th><td>Acrylic</td></tr>
+                    <tr><th>Time</th><td>15 hours</td></tr>
+                    <tr><th>Difficulty level</th><td>Intermediate</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-photo-5" role="dialog" aria-modal="true" aria-labelledby="modal-photo-5-title" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close project details">&times;</button>
+                <h3 id="modal-photo-5-title">Leaf Top</h3>
+                <table class="detail-table">
+                    <tr><th>Yarn weight</th><td>Worsted</td></tr>
+                    <tr><th>Yarn type</th><td>Acrylic</td></tr>
+                    <tr><th>Time</th><td>15 hours</td></tr>
+                    <tr><th>Difficulty level</th><td>Intermediate</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-photo-7" role="dialog" aria-modal="true" aria-labelledby="modal-photo-7-title" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close project details">&times;</button>
+                <h3 id="modal-photo-7-title">Sailor Slippers</h3>
+                <table class="detail-table">
+                    <tr><th>Yarn weight</th><td>Worsted</td></tr>
+                    <tr><th>Yarn type</th><td>Wool, 2 strands held together</td></tr>
+                    <tr><th>Time</th><td>2 hours</td></tr>
+                    <tr><th>Difficulty level</th><td>Beginner</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-photo-8" role="dialog" aria-modal="true" aria-labelledby="modal-photo-8-title" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close project details">&times;</button>
+                <h3 id="modal-photo-8-title">Rose Filet Crochet</h3>
+                <table class="detail-table">
+                    <tr><th>Yarn weight</th><td>Lace weight</td></tr>
+                    <tr><th>Yarn type</th><td>Cotton</td></tr>
+                    <tr><th>Time</th><td>15 hours</td></tr>
+                    <tr><th>Difficulty level</th><td>Advanced</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-photo-9" role="dialog" aria-modal="true" aria-labelledby="modal-photo-9-title" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" type="button" aria-label="Close project details">&times;</button>
+                <h3 id="modal-photo-9-title">Button Pillow</h3>
+                <table class="detail-table">
+                    <tr><th>Yarn weight</th><td>Chunky weight</td></tr>
+                    <tr><th>Yarn type</th><td>Chenille yarn</td></tr>
+                    <tr><th>Time</th><td>1 hour</td></tr>
+                    <tr><th>Difficulty level</th><td>Beginner</td></tr>
+                </table>
+            </div>
+        </div>
     </body>
 </html>
