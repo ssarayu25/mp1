@@ -160,11 +160,11 @@ video {
 	display: grid;
 	place-items: center;
 	background-image:
-		linear-gradient(rgba(245, 203, 203, 0.84), rgba(245, 203, 203, 0.84)),
+		linear-gradient(rgba(245, 203, 203, 0.6), rgba(245, 203, 203, 0.6)),
 		url('../assets/IMG_5418.JPG');
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: scroll;
 
 	.hero-content {
 		text-align: center;
